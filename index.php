@@ -2,7 +2,7 @@
 require_once './models/product.php';
 
 $products = [
-    new products ('/models/img/mangiare_cani.jpg', 'Cibo gusto fibre', '18.99€', 'Cani'),
+    new products ('/models/img/cuccia_cani.jpg', 'Cuccia da esterno per cani', '59.99€', 'Cani'),
     new products ('/models/img/mangiare_cani_agnello.webp', 'Cibo gusto agnello', '20.99€', 'Cani'),
     new products ('/models/img/mangiare_cani_salmone.webp', 'Cibo gusto salmone', '23.99€', 'Cani'),
     new products ('/models/img/mangiare_gatti.webp', 'Cibo gusto tacchino', '14.99€', 'Gatti'),
@@ -27,9 +27,9 @@ $products = [
       <h2>Animalstore</h2>
     </div>
   </header>
-  <div class="container my-5">
+  <div class="container d-flex flex-wrap my-5">
     <?php foreach ($products as $product) : ?>
-      <div class="card" style="width: 18rem;">
+      <div class="card m-2" style="width: 18rem;">
         <img src="<?php $product->getImages(); ?>" class="card-img-top" alt="image">
         <div class="card-body">
           <h5 class="card-title"><?php $product->getName(); ?></h5>

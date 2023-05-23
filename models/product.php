@@ -1,7 +1,4 @@
 <?php
-require_once __DIR__ . '/categories/Food.php';
-require_once __DIR__ . '/categories/Toys.php';
-require_once __DIR__ . '/categories/Kennels.php';
 
 class products {
     public $name;
@@ -9,8 +6,8 @@ class products {
     public $price;
     public $categories;
 
-    public function __construct($_name, $_image, $_price, $_categories){
-        $this->setImages($_image);
+    public function __construct($_images, $_name, $_price, $_categories){
+        $this->setImages($_images);
         $this->setName ($_name);
         $this->setPrice ($_price);
         $this->setCategories ($_categories);
@@ -54,5 +51,4 @@ class products {
     }
 
 };
-
 
